@@ -2,10 +2,8 @@
 //This is intended for use on Tinder.com/app/recs
 
 //TO-DO
-//-----------
-//Add option to swipe left on people with no bios
-//Enhance setup
-//Fix sleep function
+//----------------
+//add option to swipe left on empty bios
 
 //adds jQuery to the page so the program will work
 function setup(){
@@ -159,9 +157,9 @@ function automaticPhraseArray(array){
 		}
 
 		//wait for tinder to load the next match
-		sleep(1000).then(() => {
-    		
-		});
+		for(var i = 0; i < 100000; i++){
+
+		}
 	}
 }
 
@@ -242,3 +240,19 @@ function manualPhraseArray(array){
 		});
 	}
 }
+
+// -- main --
+
+setup();
+sleep(1500).then(() => {
+	console.log("setup in progress...");
+});
+setupNoConflict();
+
+//automatic("C:/Users/Jimmy/Documents/kindlr/Nope.txt");
+//manual("Nope.txt");
+//automaticCheckNames("Nope.txt", "Names.txt");
+//manualCheckNames("Nope.txt", "Names.txt");
+
+var phrases = new Array("shy", "420", "you", "fun", "varsity", "tattoos,");
+automaticPhraseArray(phrases);
