@@ -1,6 +1,10 @@
 //Written by Jimmy Glasscock - 3/25/2020
 //This is intended for use on Tinder.com/app/recs
 
+//TO-DO
+//-----------
+//Add option to swipe left on people with no bios
+
 //adds jQuery to the page so the program will work
 function setup(){
 	var jq = document.createElement('script');
@@ -163,10 +167,6 @@ function automaticPhraseArray(array){
 function manualCheckNames(phrasesFilepath, namesFilepath){
 	var isRunning = true;
 
-	//append onClick to Like/Nope buttons to re-activate this method when user decides
-	jQuery("[aria-label=\"Nope\"]").click(manualCheckNames);
-	jQuery("[aria-label=\"Like\"]").click(manualCheckNames);
-
 	while(isRunning){
 		var swipeLeft = false;
 
@@ -195,10 +195,6 @@ function manualCheckNames(phrasesFilepath, namesFilepath){
 function manual(phrasesFilepath){
 	var isRunning = true;
 
-	//append onClick to Like/Nope buttons to re-activate this method when user decides
-	jQuery("[aria-label=\"Nope\"]").click(manual);
-	jQuery("[aria-label=\"Like\"]").click(manual);
-
 	while(isRunning){
 		var swipeLeft = false;
 
@@ -223,10 +219,6 @@ function manual(phrasesFilepath){
 //manual right swipes, user decides if no phrases are found in the profile
 function manualPhraseArray(array){
 	var isRunning = true;
-
-	//append onClick to Like/Nope buttons to re-activate this method when user decides
-	jQuery("[aria-label=\"Nope\"]").click(manual);
-	jQuery("[aria-label=\"Like\"]").click(manual);
 
 	while(isRunning){
 		var swipeLeft = false;
@@ -253,7 +245,7 @@ function manualPhraseArray(array){
 
 setup();
 sleep(1500).then(() => {
-	console.log("setup in progress...")
+	console.log("setup in progress...");
 });
 setupNoConflict();
 
@@ -262,8 +254,5 @@ setupNoConflict();
 //automaticCheckNames("Nope.txt", "Names.txt");
 //manualCheckNames("Nope.txt", "Names.txt");
 
-var phrases = new Array(
-	"you",
-	"daddy"
-);
-automaticPhraseArray(phrases);
+var phrases = new Array("shy", "420", "you", "fun", "varsity");
+manualPhraseArray(phrases);
