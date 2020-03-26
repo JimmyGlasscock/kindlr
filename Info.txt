@@ -1,5 +1,0 @@
-BIO - 
-jQuery(".active").find(".Pos\\(a\\).D\\(f\\).Jc\\(sb\\).C\\(\\#fff\\).Ta\\(start\\).B\\(0\\).W\\(100\\%\\).Wc\\(\\$transform\\).P\\(16px\\).P\\(20px\\)--l").find(".Fl\\(start\\)").children().eq(1).children().children().children().html()
-
-NAME - 
-jQuery(".active").find(".tappable-view").find(".tappable_recCard").find(".react-swipeable-view-container").find("[data-swipeable=\"true\"]").find(".CenterAlign").find("div").attr("aria-label");
