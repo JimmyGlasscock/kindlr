@@ -13,7 +13,7 @@ Kindlr is a script that swipes for you on the tinder website, based on a user pr
 ## Usage
 To use Kindlr, log into tinder.com/app/recs.
 
-Paste all of the functions into the javascript console, and hit enter.
+Paste the contents of kindlr.js (all of the functions) into the javascript console, and hit enter.
 
 Run the following method to load jQuery onto the page:
 ```javascript
