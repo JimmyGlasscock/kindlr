@@ -240,19 +240,3 @@ function manualPhraseArray(array){
 		});
 	}
 }
-
-// -- main --
-
-setup();
-sleep(1500).then(() => {
-	console.log("setup in progress...");
-});
-setupNoConflict();
-
-//automatic("C:/Users/Jimmy/Documents/kindlr/Nope.txt");
-//manual("Nope.txt");
-//automaticCheckNames("Nope.txt", "Names.txt");
-//manualCheckNames("Nope.txt", "Names.txt");
-
-var phrases = new Array("shy", "420", "you", "fun", "varsity");
-manualPhraseArray(phrases);
