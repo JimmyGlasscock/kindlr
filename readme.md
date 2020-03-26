@@ -1,4 +1,4 @@
-# Kindlr ![alt text](https://raw.githubusercontent.com/jimmyglasscock/kindlr/master/logo.png)
+# Kindlr ![alt text](https://raw.githubusercontent.com/jimmyglasscock/kindlr/master/logo.png =46x53)
 
 Kindlr is a script that swipes for you on the tinder website, based on a user provided criteria.
 
